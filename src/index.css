@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #b0e0e6;
+  background-color: #cda2a0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,11 +24,12 @@ a:hover {
 
 body {
   margin: 0;
-  /* display: flex; */
+  display: flex;
   place-items: center;
   min-width: 320px;
   /* min-height: 100vh; */
-  background-color: #b0e0e6; /* Powder Blue */
+  /* background-color: #b0e0e6; Powder Blue */
+  /* background-color: #cda2a0; */
   color: #555555; /* Dark grey for text readability */
   font-family: 'Arial', sans-serif;
 }

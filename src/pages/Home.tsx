@@ -1,10 +1,12 @@
+import Card2 from "../components/Card2";
 
 export default function Home() {
   return (
     <div>
-      <div className='card'>
+      {/* <div className='card'>
        
-      </div>
+      </div> */}
+      <Card2 />
     </div>
   );
 }
