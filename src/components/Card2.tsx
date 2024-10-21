@@ -14,9 +14,9 @@ export default function Card2() {
         <div className='card-header'></div>
         <div className='card-about'>
           <div className='about-left'>
-            {/* <h1>Olha Kucheruk</h1> */}
+           
             <h3>Frontend developer</h3>
-            <p>
+            <p className='description'>
               I am a Software Engineer with 1.5 years of experience mentoring teens in web development and a proven
               ability to build dynamic, user-friendly applications. Fluent in three languages, I bring strong
               communication and a global perspective to every project. With a sharp eye for design and solid technical
@@ -28,7 +28,10 @@ export default function Card2() {
             <img src={img1} alt='' />
           </div>
           <div className='about-right'>
-            <h2>OLHA KUCHERUK</h2>
+            <h3>OLHA KUCHERUK</h3>
+            {/* <div className='pics'>
+              <img src={img1} alt='' />
+            </div> */}
             <div className='welcome'>
               <div className='welcome-top'></div>
               <p>Welcome</p>
