@@ -82,80 +82,77 @@
   background-color: #d7d3d2;
   border-radius: 0 0 0.75rem 0.75rem;
 }
-
 .info-container {
-  background-color: #f5e0e0;
-  padding: 2rem 0;
-}
-
+    background-color: #f5e0e0;
+    padding: 2rem 0;
+  }
 .info {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.info div {
-  font-size: 1.125rem;
-  color: #70304a;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  transition: background-color 0.3s;
-}
-
-.experience,
-.education,
-.languages,
-.tech-skills,
-.soft-skills,
-.certifications {
-  margin-bottom: 1rem;
-}
-.grid {
-  display: grid;
-}
-
-.recommendations {
-  height: 5rem;
-}
-
-.button {
-  display: inline-block;
-  width: 155px;
-  height: 41px;
-  padding: 10px 20px;
-  border-radius: 50px; /* Fully rounded edges */
-  border: none;
-  font-family: 'Arial', sans-serif; /* Font similar to the picture */
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: all 0.3s ease;
-}
-
-.button-pink {
-  background-color: #fcb0b0; /* Light pink */
-  color: #fff;
-  box-shadow: -4px 6px 11px -2px black;
-}
-
-.button-white {
-  background-color: #f2f2f2; /* Off-white */
-  color: #d76c6c; /* Light pink for text */
-  box-shadow: -4px 6px 11px -2px black;
-}
-
-.button:hover {
-  transform: translateY(-2px); /* Slight hover effect */
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-.button:active {
-  transform: translateY(0); /* Removes hover effect when clicked */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers both image and button horizontally */
+    justify-content: center; /* Centers them vertically */
+    gap: 10px; /* Adds space between the image and button */
+  }
+  
+  .info-container img {
+    width: 50px; /* Adjust based on the icon size you prefer */
+    height: auto;
+    margin-bottom: 0.5rem; /* Add some space between the icon and button */
+  }
+  
+  .experience,
+  .education,
+  .languages,
+  .tech-skills,
+  .soft-skills,
+  .certifications {
+    margin-bottom: 1rem;
+  }
+  
+  .button {
+    display: inline-block;
+    width: 155px;
+    height: 41px;
+    padding: 10px 20px;
+    border-radius: 50px; /* Fully rounded edges */
+    border: none;
+    font-family: 'Arial', sans-serif; /* Font similar to the picture */
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease;
+  }
+  
+  .button-pink {
+    background-color: #fcb0b0; /* Light pink */
+    color: #fff;
+    box-shadow: -4px 6px 11px -2px black;
+  }
+  
+  .button-white {
+    background-color: #f2f2f2; /* Off-white */
+    color: #d76c6c; /* Light pink for text */
+    box-shadow: -4px 6px 11px -2px black;
+  }
+  
+  .button:hover {
+    transform: translateY(-2px); /* Slight hover effect */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .button:active {
+    transform: translateY(0); /* Removes hover effect when clicked */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
 /* Make the layout responsive */
 @media (max-width: 1024px) {
   .card-about {
