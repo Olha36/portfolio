@@ -1,6 +1,12 @@
 import '../css/card.css';
 import img1 from '../img/1_optimized.png';
-import education from '../img/avatar-icons/2.png';
+import experience from '../img/avatar-icons/experience.png';
+import education from '../img/avatar-icons/education.png';
+import languages from '../img/avatar-icons/language.png';
+import certificate from '../img/avatar-icons/certificate.png';
+import softSkills from '../img/avatar-icons/soft-skills.png';
+import techSkills from '../img/avatar-icons/tech-skills.png';
+
 export default function Card2() {
   return (
     <div>
@@ -36,7 +42,7 @@ export default function Card2() {
           <div className='info'>
             <div className='info-left'>
               <div className='experience grid'>
-                <img src={education} alt='' />
+                <img src={experience} alt='' />
                 <button className='button button-pink'>experience</button>
               </div>
               <div className='education grid'>
@@ -46,21 +52,21 @@ export default function Card2() {
             </div>
             <div className='info-center'>
               <div className='languages grid'>
-                <img src={education} alt='' />
+                <img src={languages} alt='' />
                 <button className='button button-white'>languages</button>
               </div>
               <div className='tech-skills grid'>
-                <img src={education} alt='' />
+                <img src={techSkills} alt='' />
                 <button className='button button-white'>tech skills</button>
               </div>
             </div>
             <div className='info-right'>
               <div className='soft-skills grid'>
-                <img src={education} alt='' />
+                <img src={softSkills} alt='' />
                 <button className='button button-pink'>soft-skills</button>
               </div>
               <div className='certifications grid'>
-                <img src={education} alt='' />
+                <img src={certificate} alt='' />
                 <button className='button button-pink'>certification</button>
               </div>
             </div>
