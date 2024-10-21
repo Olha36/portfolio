@@ -1,6 +1,5 @@
 import '../css/card.css';
 import img1 from '../img/1_optimized.png';
-import experience from '../img/avatar-icons/1.png';
 import education from '../img/avatar-icons/2.png';
 export default function Card2() {
   return (
@@ -36,33 +35,33 @@ export default function Card2() {
         <div className='info-container'>
           <div className='info'>
             <div className='info-left'>
-              <div className='experience'>
-                <img src={experience} alt='' />
-                <h5>experience</h5>
-              </div>
-              <div className='education'>
+              <div className='experience grid'>
                 <img src={education} alt='' />
-                <h5>education</h5>
+                <button className='button button-pink'>experience</button>
+              </div>
+              <div className='education grid'>
+                <img src={education} alt='' />
+                <button className='button button-pink'>education</button>
               </div>
             </div>
             <div className='info-center'>
-              <div className='languages'>
+              <div className='languages grid'>
                 <img src={education} alt='' />
-                <h5>languages</h5>
+                <button className='button button-white'>languages</button>
               </div>
-              <div className='tech-skills'>
+              <div className='tech-skills grid'>
                 <img src={education} alt='' />
-                <h5>tech-skills</h5>
+                <button className='button button-white'>tech skills</button>
               </div>
             </div>
             <div className='info-right'>
-              <div className='soft-skills'>
+              <div className='soft-skills grid'>
                 <img src={education} alt='' />
-                <h5>soft-skills</h5>
+                <button className='button button-pink'>soft-skills</button>
               </div>
-              <div className='certifications'>
+              <div className='certifications grid'>
                 <img src={education} alt='' />
-                <h5>certifications</h5>
+                <button className='button button-pink'>certification</button>
               </div>
             </div>
           </div>
