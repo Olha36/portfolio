@@ -14,7 +14,7 @@ export default function Card2() {
         <div className='card-header'></div>
         <div className='card-about'>
           <div className='about-left'>
-            <h1>Olha Kucheruk</h1>
+            {/* <h1>Olha Kucheruk</h1> */}
             <h3>Frontend developer</h3>
             <p>
               I am a passionate Software Engineer with a focus on frontend development and over 1.5 years of experience
@@ -24,17 +24,19 @@ export default function Card2() {
               and a strong technical foundation, I am eager to contribute to innovative projects that make a real
               impact.
             </p>
+            <button className='button button-pink'>References</button>
           </div>
           <div className='pics'>
             <img src={img1} alt='' />
           </div>
           <div className='about-right'>
-            <h2>ABOUT ME</h2>
+            <h2>OLHA KUCHERUK</h2>
             <div className='welcome'>
               <div className='welcome-top'></div>
               <p>Welcome</p>
               <div className='welcome-bottom'></div>
             </div>
+
           </div>
         </div>
 
