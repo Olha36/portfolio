@@ -124,6 +124,8 @@
 
 .button {
   display: inline-block;
+  width: 155px;
+  height: 41px;
   padding: 10px 20px;
   border-radius: 50px; /* Fully rounded edges */
   border: none;
