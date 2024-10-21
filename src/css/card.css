@@ -1,115 +1,212 @@
 .card {
-    background-color: #e0acac;
-    border-radius: 1.25rem;
-    color: #160318;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  }
-  
-  .card h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #70304a; /* Darker for better contrast */
-  }
-  
-  .card h2 {
-    font-size: 1.875rem;
-    margin-bottom: 1rem;
-    color: #70304a;
-  }
-  
-  .card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: #8a4269;
-  }
-  
+  background-color: #e0acac;
+  border-radius: 1.25rem;
+  color: #160318;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #70304a; /* Darker for better contrast */
+}
+
+.card h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1rem;
+  color: #70304a;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #8a4269;
+}
+
+.card-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c5ceda;
+  padding: 2rem;
+}
+
+.about-left {
+  width: 40%;
+  max-width: 25rem;
+}
+
+.card-about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333; /* More readable */
+}
+
+.pics img {
+  width: 250px;
+  border-radius: 20%;
+  border: 2px solid #e0acac;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds emphasis */
+}
+
+.about-right {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.welcome {
+  width: 14rem;
+  background-color: #e1bbba;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.welcome p {
+  color: #c1888f;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.welcome-top {
+  height: 0.9375rem;
+  background-color: #e1aeab;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.welcome-bottom {
+  height: 0.9375rem;
+  background-color: #d7d3d2;
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+
+.info-container {
+  background-color: #f5e0e0;
+  padding: 2rem 0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.info div {
+  font-size: 1.125rem;
+  color: #70304a;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+.info img {
+    width: 117px;
+    height: 118px;
+}
+
+.info div:hover {
+  background-color: #f5cccc; /* Hover effect */
+  border-radius: 0.5rem;
+}
+
+.experience,
+.education,
+.languages,
+.tech-skills,
+.soft-skills,
+.certifications {
+  margin-bottom: 1rem;
+}
+
+.recommendations {
+  height: 5rem;
+}
+/* Make the layout responsive */
+@media (max-width: 1024px) {
   .card-about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #c5ceda;
-    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .about-left {
-    width: 40%;
-    max-width: 25rem;
-  }
-  
-  .card-about p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333; /* More readable */
-  }
-  
-  .pics img {
-    width: 250px;
-    border-radius: 20%;
-    border: 2px solid #e0acac;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds emphasis */
-  }
-  
+
+  .about-left,
   .about-right {
-    text-align: center;
-    width: 30%;
-  }
-  
-  .welcome {
-    width: 14rem;
-    background-color: #e1bbba;
-    padding: 1rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .welcome p {
-    color: #c1888f;
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  .welcome-top {
-    height: 0.9375rem;
-    background-color: #e1aeab;
-    border-radius: 0.75rem 0.75rem 0 0;
-  }
-  
-  .welcome-bottom {
-    height: 0.9375rem;
-    background-color: #d7d3d2;
-    border-radius: 0 0 0.75rem 0.75rem;
-  }
-  
-  .info-container {
-    background-color: #f5e0e0;
-    padding: 2rem 0;
-  }
-  
-  .info {
+    width: 100%;
+    align-items: center;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .pics img {
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-about {
+    padding: 1rem;
+  }
+
+  .card-about p {
+    font-size: 0.75rem;
+  }
+
+  .welcome p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-about {
+    padding: 0.5rem;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
     text-align: center;
   }
-  
-  .info div {
-    font-size: 1.125rem;
-    color: #70304a;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s;
+
+  .pics img {
+    max-width: 10rem;
   }
-  
-  .info div:hover {
-    background-color: #f5cccc; /* Hover effect */
-    border-radius: 0.5rem;
+
+  .card-about p {
+    font-size: 0.7rem;
   }
-  
-  .experience, .education, .languages, .tech-skills, .soft-skills, .certifications {
-    margin-bottom: 1rem;
+
+  .welcome {
+    width: 100%;
   }
-  
-  .recommendations {
-    height: 5rem;
+
+  .welcome p {
+    font-size: 1.25rem;
   }
-  
+
+  .welcome-top,
+  .welcome-bottom {
+    height: 0.75rem;
+  }
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+}
+
+.info-container .info div {
+  margin: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-container .info div {
+    margin: 0.5rem 0;
+  }
+}
