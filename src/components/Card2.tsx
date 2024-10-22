@@ -24,14 +24,14 @@ export default function Card2() {
             </p>
             <button className='button button-pink'>References</button>
           </div>
-          <div className='pics'>
+          {/* <div className='pics'>
             <img src={img1} alt='' />
-          </div>
+          </div> */}
           <div className='about-right'>
             <h3>OLHA KUCHERUK</h3>
-            {/* <div className='pics'>
+            <div className='pics'>
               <img src={img1} alt='' />
-            </div> */}
+            </div>
             <div className='welcome'>
               <div className='welcome-top'></div>
               <p>Welcome</p>
@@ -59,13 +59,13 @@ export default function Card2() {
               </div>
               <div className='tech-skills grid'>
                 <img src={techSkills} alt='' />
-                <button className='button button-white'>tech skills</button>
+                <button className='button button-white'>tech/soft skills</button>
               </div>
             </div>
             <div className='info-right'>
               <div className='soft-skills grid'>
                 <img src={softSkills} alt='' />
-                <button className='button button-pink'>soft-skills</button>
+                <button className='button button-pink'>projects</button>
               </div>
               <div className='certifications grid'>
                 <img src={certificate} alt='' />
