@@ -1,161 +1,80 @@
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import MailIcon from '@mui/icons-material/Mail';
-import MenuIcon from '@mui/icons-material/Menu';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import { styled, useTheme } from '@mui/material/styles';
-import Toolbar from '@mui/material/Toolbar';
-import React from 'react';
+import '../css/card.css';
+import img1 from '../img/1_optimized.png';
+import certificate from '../img/avatar-icons/certificate.png';
+import education from '../img/avatar-icons/education.png';
+import experience from '../img/avatar-icons/experience.png';
+import languages from '../img/avatar-icons/language.png';
+import softSkills from '../img/avatar-icons/soft-skills.png';
+import techSkills from '../img/avatar-icons/tech-skills.png';
 
-const drawerWidth = 240;
-
-const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
-  open?: boolean;
-}>(({ theme }) => ({
-  flexGrow: 1,
-  padding: theme.spacing(3),
-  transition: theme.transitions.create('margin', {
-    easing: theme.transitions.easing.sharp,
-    duration: theme.transitions.duration.leavingScreen,
-  }),
-  marginLeft: `-${drawerWidth}px`,
-  variants: [
-    {
-      props: ({ open }) => open,
-      style: {
-        transition: theme.transitions.create('margin', {
-          easing: theme.transitions.easing.easeOut,
-          duration: theme.transitions.duration.enteringScreen,
-        }),
-        marginLeft: 0,
-      },
-    },
-  ],
-}));
-
-interface AppBarProps extends MuiAppBarProps {
-  open?: boolean;
-}
-
-const AppBar = styled(MuiAppBar, {
-  shouldForwardProp: (prop) => prop !== 'open',
-})<AppBarProps>(({ theme }) => ({
-  transition: theme.transitions.create(['margin', 'width'], {
-    easing: theme.transitions.easing.sharp,
-    duration: theme.transitions.duration.leavingScreen,
-  }),
-  variants: [
-    {
-      props: ({ open }) => open,
-      style: {
-        width: `calc(100% - ${drawerWidth}px)`,
-        marginLeft: `${drawerWidth}px`,
-        transition: theme.transitions.create(['margin', 'width'], {
-          easing: theme.transitions.easing.easeOut,
-          duration: theme.transitions.duration.enteringScreen,
-        }),
-      },
-    },
-  ],
-}));
-
-const DrawerHeader = styled('div')(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  padding: theme.spacing(0, 1),
-  // necessary for content to be below app bar
-  ...theme.mixins.toolbar,
-  justifyContent: 'flex-end',
-}));
-
-export default function PersistentDrawerLeft() {
-  const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
-
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
-
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
-
+export default function Card() {
   return (
-    <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
-      <AppBar position='fixed' open={open}>
-        <Toolbar>
-          <IconButton
-            color='inherit'
-            aria-label='open drawer'
-            onClick={handleDrawerOpen}
-            edge='start'
-            sx={[
-              {
-                mr: 2,
-              },
-              open && { display: 'none' },
-            ]}
-          >
-            <MenuIcon />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
-      <Drawer
-        sx={{
-          width: drawerWidth,
-          flexShrink: 0,
-          '& .MuiDrawer-paper': {
-            width: drawerWidth,
-            boxSizing: 'border-box',
-          },
-        }}
-        variant='persistent'
-        anchor='left'
-        open={open}
-      >
-        <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-          </IconButton>
-        </DrawerHeader>
-        <Divider />
-        <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-      </Drawer>
-      <Main open={open}>
-        <DrawerHeader />
-      </Main>
-    </Box>
+    <div>
+      <div className='card'>
+        <div className='card-header'></div>
+        <div className='card-about'>
+          <div className='about-left'>
+            <h3>Frontend developer</h3>
+            <p className='description'>
+              I am a Software Engineer with 1.5 years of experience mentoring teens in web development and a proven
+              ability to build dynamic, user-friendly applications. Fluent in three languages, I bring strong
+              communication and a global perspective to every project. With a sharp eye for design and solid technical
+              skills, I thrive in collaborative environments and am eager to drive innovation in impactful projects.
+            </p>
+            <button className='button button-pink'>References</button>
+          </div>
+          {/* <div className='pics'>
+            <img src={img1} alt='' />
+          </div> */}
+          <div className='about-right'>
+            <h3>OLHA KUCHERUK</h3>
+            <div className='pics'>
+              <img src={img1} alt='' />
+            </div>
+            <div className='welcome'>
+              <div className='welcome-top'></div>
+              <p>Welcome</p>
+              <div className='welcome-bottom'></div>
+            </div>
+          </div>
+        </div>
+
+        <div className='info-container'>
+          <div className='info'>
+            <div className='info-left'>
+              <div className='experience grid'>
+                <img src={experience} alt='' />
+                <button className='button button-pink'>experience</button>
+              </div>
+              <div className='education grid'>
+                <img src={education} alt='' />
+                <button className='button button-pink'>education</button>
+              </div>
+            </div>
+            <div className='info-center'>
+              <div className='languages grid'>
+                <img src={languages} alt='' />
+                <button className='button button-white'>languages</button>
+              </div>
+              <div className='tech-skills grid'>
+                <img src={techSkills} alt='' />
+                <button className='button button-white'>tech/soft skills</button>
+              </div>
+            </div>
+            <div className='info-right'>
+              <div className='soft-skills grid'>
+                <img src={softSkills} alt='' />
+                <button className='button button-pink'>projects</button>
+              </div>
+              <div className='certifications grid'>
+                <img src={certificate} alt='' />
+                <button className='button button-pink'>certification</button>
+              </div>
+            </div>
+          </div>
+          <div className='recommendations'></div>
+        </div>
+      </div>
+    </div>
   );
 }

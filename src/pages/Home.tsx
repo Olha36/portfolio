@@ -1,4 +1,4 @@
-import Card2 from "../components/Card2";
+import Card from '../components/Card';
 
 export default function Home() {
   return (
@@ -6,7 +6,7 @@ export default function Home() {
       {/* <div className='card'>
        
       </div> */}
-      <Card2 />
+      <Card />
     </div>
   );
 }
