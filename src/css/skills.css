@@ -1,0 +1,32 @@
+.info-container {
+  margin-top: 1rem;
+}
+
+.skills-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c5ceda;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tech-skills ul,
+.soft-skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tech-skills li,
+.soft-skills li {
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.bold {
+  font-weight: bold;
+}

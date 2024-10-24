@@ -1,0 +1,108 @@
+/* General container styling */
+.card-container {
+  background-color: #e0acac;
+  border-radius: 1.25rem;
+  color: #160318;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.experience-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c5ceda;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card-title h1 {
+  font-size: 2.5rem;
+  color: #70304a;
+  margin: 0;
+}
+
+
+/* Info container */
+.info-container {
+  background-color: #f5e0e0;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Individual experience block */
+.experience-logistics,
+.experience-coach,
+.experience-freelance,
+.experience-tutor {
+  margin-bottom: 2rem;
+}
+
+/* Style the h2 with simple lines */
+.experience-logistics h2,
+.experience-coach h2,
+.experience-freelance h2,
+.experience-tutor h2 {
+  font-size: 1.75rem;
+  color: #70304a;
+  text-align: center;
+  margin: 2rem 0;
+  border-top: 1px solid #70304a;  /* Line above */
+  border-bottom: 1px solid #70304a; /* Line below */
+  padding: 0.5rem 0;
+}
+
+/* Bullet points list */
+ul {
+  padding-left: 1.5rem; /* Adjust padding for consistent spacing */
+  list-style-position: inside;
+  margin: 0;
+}
+
+ul li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem; /* Ensure spacing is even */
+  color: #160318;
+  line-height: 1.5;
+  text-align: start;
+}
+
+ul li::marker {
+  color: #70304a; /* Bullet color */
+  font-size: 1.25rem;
+}
+
+/* Bold for key terms */
+.bold {
+  font-weight: bold;
+  color: #70304a;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-title h1 {
+    font-size: 2rem;
+  }
+
+  .experience-logistics h2,
+  .experience-coach h2,
+  .experience-freelance h2,
+  .experience-tutor h2 {
+    font-size: 1.5rem;
+  }
+}
