@@ -1,10 +1,10 @@
-.card h2 {
+.card-title h2 {
   font-size: 1.875rem;
   margin-bottom: 1rem;
   color: #70304a;
 }
 
-.card h3 {
+.card-title h3 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
   color: #8a4269;
