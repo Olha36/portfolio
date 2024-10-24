@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <div>
       <div className='card-container'>
-        <div className='card-title'>
+        <div className='experience-title'>
           <h1>WORK EXPERIENCE</h1>
           <img src={home} alt='home icon' />
         </div>

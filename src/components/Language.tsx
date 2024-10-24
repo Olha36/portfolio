@@ -5,7 +5,7 @@ import '../App.css';
 export default function Language() {
   return (
     <div className='card-container'>
-      <div className='card-title'>
+      <div className='language-title'>
         <h1>Languages</h1>
       </div>
 
