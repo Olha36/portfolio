@@ -1,0 +1,22 @@
+.frame {
+  background-color: #e0acac;
+  border-radius: 1.25rem;
+  color: #160318;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.info-container {
+  background-color: #f5e0e0;
+  padding: 2rem 0;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}

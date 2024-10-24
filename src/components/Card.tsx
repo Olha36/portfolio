@@ -10,7 +10,7 @@ import techSkills from '../img/avatar-icons/tech-skills.png';
 export default function Card() {
   return (
     <div>
-      <div className='card'>
+      <div className='card frame'>
         <div className='card-header'></div>
         <div className='card-about'>
           <div className='about-left'>

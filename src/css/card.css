@@ -1,4 +1,4 @@
-.card {
+.frame {
   background-color: #e0acac;
   border-radius: 1.25rem;
   color: #160318;
@@ -6,11 +6,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.card h1 {
+/* .card h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  color: #70304a; /* Darker for better contrast */
-}
+  color: #70304a; 
+} */
 
 .card h2 {
   font-size: 1.875rem;

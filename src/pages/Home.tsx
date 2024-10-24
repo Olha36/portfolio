@@ -1,4 +1,5 @@
 import Card from '../components/Card';
+// import Experience from './Experience';
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
        
       </div> */}
       <Card />
+      {/* <Experience /> */}
     </div>
   );
 }
