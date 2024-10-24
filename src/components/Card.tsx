@@ -10,9 +10,9 @@ import techSkills from '../img/avatar-icons/tech-skills.png';
 export default function Card() {
   return (
     <div>
-      <div className='card frame'>
+      <div className='card-container'>
         <div className='card-header'></div>
-        <div className='card-about'>
+        <div className='card-title'>
           <div className='about-left'>
             <h3>Frontend developer</h3>
             <p className='description'>
