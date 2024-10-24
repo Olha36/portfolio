@@ -27,3 +27,6 @@ h1 {
   background-color: #c5ceda;
   padding: 2rem;
 }
+.bold {
+  font-weight: bold;
+}

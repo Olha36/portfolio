@@ -34,44 +34,44 @@ export default function Skills() {
             <h2>Soft skills:</h2>
             <ul>
               <li>
-                Adaptability: Passionate about learning new languages and programming technologies, demonstrating a
-                strong ability to adapt to changing environments and tools.
+                <span className='bold'>Adaptability: </span> Passionate about learning new languages and programming
+                technologies, demonstrating a strong ability to adapt to changing environments and tools.
               </li>
               <li>
-                Communication Skills: Proficient in five languages, facilitating effective communication and
-                collaboration within diverse teams and with clients.
+                <span className='bold'> Communication Skills: </span> Proficient in five languages, facilitating
+                effective communication and collaboration within diverse teams and with clients.
               </li>
               <li>
-                Problem-Solving: Patient and result-oriented, with a methodical approach to challenges, ensuring
-                effective solutions in development and debugging processes.
+                <span className='bold'> Problem-Solving: </span> Patient and result-oriented, with a methodical approach
+                to challenges, ensuring effective solutions in development and debugging processes.
               </li>
               <li>
-                Teamwork: Strong ability to work collaboratively in team settings, leveraging communication skills to
-                foster cooperation and enhance project outcomes.
+                <span className='bold'> Teamwork: </span> Strong ability to work collaboratively in team settings,
+                leveraging communication skills to foster cooperation and enhance project outcomes.
               </li>
               <li>
-                Attention to Detail: Committed to delivering high-quality work, with a keen eye for detail that ensures
-                accuracy and excellence in coding and design.
+                <span className='bold'> Attention to Detail: </span> Committed to delivering high-quality work, with a
+                keen eye for detail that ensures accuracy and excellence in coding and design.
               </li>
               <li>
-                Time Management: Effective in prioritizing tasks to meet deadlines while maintaining quality,
-                demonstrating a strong focus on achieving results.
+                <span className='bold'> Time Management: </span> Effective in prioritizing tasks to meet deadlines while
+                maintaining quality, demonstrating a strong focus on achieving results.
               </li>
               <li>
-                Continuous Learning: Enthusiastic about personal and professional growth, with a commitment to staying
-                updated on the latest technologies and industry trends.
+                <span className='bold'> Continuous Learning: </span> Enthusiastic about personal and professional
+                growth, with a commitment to staying updated on the latest technologies and industry trends.
               </li>
               <li>
-                Cultural Awareness: Knowledge of multiple languages enhances understanding of diverse cultures,
-                contributing to positive interactions in global teams.
+                <span className='bold'> Cultural Awareness: </span> Knowledge of multiple languages enhances
+                understanding of diverse cultures, contributing to positive interactions in global teams.
               </li>
               <li>
-                Customer Focus: Patient and attentive to user needs, dedicated to developing user-friendly applications
-                that enhance the overall user experience.
+                <span className='bold'> Customer Focus: </span> Patient and attentive to user needs, dedicated to
+                developing user-friendly applications that enhance the overall user experience.
               </li>
               <li>
-                Resilience: Able to maintain persistence and a positive attitude when facing challenges, essential for
-                success in the dynamic field of technology.
+                <span className='bold'> Resilience: </span> Able to maintain persistence and a positive attitude when
+                facing challenges, essential for success in the dynamic field of technology.
               </li>
             </ul>
           </div>
