@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import ExperienceC from './pages/Experience';
 import Language from './components/Language';
+import Education from './components/Education';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path='/home' element={<Home />} />
             <Route path='/experience' element={<ExperienceC />} />
             <Route path='/languages' element={<Language />} />
+            <Route path='/education' element={<Education />} />
           </Routes>
         </BrowserRouter>
       </div>
