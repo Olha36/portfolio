@@ -1,19 +1,29 @@
-import home from '../img/3d-house.png';
+// import home from '../img/3d-house.png';
+import '../css/languages.css';
+import '../App.css';
+
 export default function Language() {
   return (
-    <div>
-      <div className='card-container'>
-        <div className='card-title'>
-          <h1>LANGUAGES</h1>
-          <img src={home} alt='home icon' />
-        </div>
+    <div className='card-container'>
+      <div className='card-title'>
+        <h1>Languages</h1>
+      </div>
 
-        <div className='info-container'>
-          <p>Ukrainian - Native</p>
-          <p>English - Advanced (C1)</p>
-          <p>Polish - Advanced (C1)</p>
-          <p>German - Pe-intermediate (B1)</p>
-        </div>
+      <div className='language-info-container'>
+        <span className='bold'>Ukrainian</span>
+        <span>Native</span>
+      </div>
+      <div className='language-info-container'>
+        <span className='bold'>English</span>
+        <span>Advanced (C1)</span>
+      </div>
+      <div className='language-info-container'>
+        <span className='bold'>Polish</span>
+        <span>Advanced (C1)</span>
+      </div>
+      <div className='language-info-container'>
+        <span className='bold'>German</span>
+        <span>Pre-intermediate (B1)</span>
       </div>
     </div>
   );
