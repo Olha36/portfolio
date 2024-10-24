@@ -3,10 +3,10 @@
   background-color: #e0acac;
   border-radius: 1.25rem;
   color: #160318;
-  padding: 2rem; /* Increased padding for more breathing space */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow for a more modern look */
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   max-width: 1200px;
-  margin: 2rem auto; /* Center the card */
+  margin: 2rem auto;
 }
 
 /* Title section styling */
@@ -17,17 +17,17 @@
   background-color: #c5ceda;
   padding: 2rem;
   border-radius: 1rem;
-  margin-bottom: 2rem; /* Space between title and content */
+  margin-bottom: 2rem;
 }
 
 .card-title h1 {
-  font-size: 2.5rem; /* Larger title font */
+  font-size: 2.5rem;
   color: #70304a;
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
 
 .card-title img {
-  width: 50px; /* Adjust the size of the icon */
+  width: 50px;
   height: auto;
 }
 
@@ -50,60 +50,47 @@
 .experience-coach,
 .experience-freelance,
 .experience-tutor {
-  margin-bottom: 2rem; /* Space between sections */
+  margin-bottom: 2rem;
 }
 
+/* Style the h2 with simple lines */
 .experience-logistics h2,
 .experience-coach h2,
 .experience-freelance h2,
 .experience-tutor h2 {
   font-size: 1.75rem;
   color: #70304a;
-  margin-bottom: 1rem;
-  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+  border-top: 1px solid #70304a;  /* Line above */
+  border-bottom: 1px solid #70304a; /* Line below */
+  padding: 0.5rem 0;
 }
 
-.experience-logistics h3,
-.experience-coach h3,
-.experience-freelance h3,
-.experience-tutor h3 {
-  font-size: 1.25rem;
-  color: #5a3e4b;
-  margin-bottom: 0.5rem;
-}
-
-.experience-logistics p,
-.experience-coach p,
-.experience-freelance p,
-.experience-tutor p {
-  font-size: 1rem;
-  color: #160318;
-  line-height: 1.6; /* Improve readability */
-}
-
+/* Bullet points list */
 ul {
-  padding-left: 1.25rem;
+  padding-left: 1.5rem; /* Adjust padding for consistent spacing */
+  list-style-position: inside;
+  margin: 0;
 }
 
 ul li {
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem; /* Ensure spacing is even */
   color: #160318;
   line-height: 1.5;
+  text-align: start;
 }
 
+ul li::marker {
+  color: #70304a; /* Bullet color */
+  font-size: 1.25rem;
+}
+
+/* Bold for key terms */
 .bold {
   font-weight: bold;
-  color: #70304a; /* Highlight important text */
-}
-
-/* Experience section titles */
-.experience-logistics h2,
-.experience-coach h2,
-.experience-freelance h2,
-.experience-tutor h2 {
-  border-bottom: 2px solid #70304a; /* Underline for emphasis */
-  padding-bottom: 0.5rem;
+  color: #70304a;
 }
 
 /* Mobile responsiveness */
