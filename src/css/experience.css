@@ -1,16 +1,126 @@
+/* General container styling */
+.card-container {
+  background-color: #e0acac;
+  border-radius: 1.25rem;
+  color: #160318;
+  padding: 2rem; /* Increased padding for more breathing space */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow for a more modern look */
+  max-width: 1200px;
+  margin: 2rem auto; /* Center the card */
+}
 
+/* Title section styling */
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c5ceda;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem; /* Space between title and content */
+}
 
+.card-title h1 {
+  font-size: 2.5rem; /* Larger title font */
+  color: #70304a;
+  margin: 0; /* Remove default margin */
+}
+
+.card-title img {
+  width: 50px; /* Adjust the size of the icon */
+  height: auto;
+}
+
+/* Info container */
 .info-container {
   background-color: #f5e0e0;
-  padding: 2rem 0;
+  padding: 2rem;
+  border-radius: 1rem;
 }
-.info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center;
-}
+
 .flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Individual experience block */
+.experience-logistics,
+.experience-coach,
+.experience-freelance,
+.experience-tutor {
+  margin-bottom: 2rem; /* Space between sections */
+}
+
+.experience-logistics h2,
+.experience-coach h2,
+.experience-freelance h2,
+.experience-tutor h2 {
+  font-size: 1.75rem;
+  color: #70304a;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.experience-logistics h3,
+.experience-coach h3,
+.experience-freelance h3,
+.experience-tutor h3 {
+  font-size: 1.25rem;
+  color: #5a3e4b;
+  margin-bottom: 0.5rem;
+}
+
+.experience-logistics p,
+.experience-coach p,
+.experience-freelance p,
+.experience-tutor p {
+  font-size: 1rem;
+  color: #160318;
+  line-height: 1.6; /* Improve readability */
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #160318;
+  line-height: 1.5;
+}
+
+.bold {
+  font-weight: bold;
+  color: #70304a; /* Highlight important text */
+}
+
+/* Experience section titles */
+.experience-logistics h2,
+.experience-coach h2,
+.experience-freelance h2,
+.experience-tutor h2 {
+  border-bottom: 2px solid #70304a; /* Underline for emphasis */
+  padding-bottom: 0.5rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-title h1 {
+    font-size: 2rem;
+  }
+
+  .experience-logistics h2,
+  .experience-coach h2,
+  .experience-freelance h2,
+  .experience-tutor h2 {
+    font-size: 1.5rem;
+  }
 }
