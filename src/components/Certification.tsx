@@ -1,4 +1,4 @@
-// import home from '../img/3d-house.png';
+import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import '../css/certifications.css';
 import home from '../img/3d-house.png';
@@ -13,13 +13,23 @@ import postman from '../img/certificates/postman and api testing for beginners.j
 import programmingWithJs from '../img/certificates/Programming with Javascript.jpg';
 import responsiveWebDesign from '../img/certificates/responsive web design.jpg';
 import typescript from '../img/certificates/typescript for professionals.jpg';
+import Home from '../pages/Home';
 
 export default function Certification() {
+  const navigate = useNavigate();
+  const handleReturnClick = () => {
+    navigate('/home');
+    return (
+      <>
+        <Home />
+      </>
+    );
+  };
   return (
     <div className='certification-container'>
       <div className='certification-title'>
         <h1>Certifications</h1>
-        <img src={home} alt='home icon' />
+        <img src={home} alt='home icon' onClick={handleReturnClick} />
       </div>
 
       <div className='certification-grid'>

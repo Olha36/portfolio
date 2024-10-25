@@ -12,6 +12,7 @@ import Language from './Language';
 import Education from './Education';
 import Projects from '../pages/Projects';
 import Skills from './Skills';
+import Certifications from '../pages/Ceritications';
 
 export default function Card() {
   const navigate = useNavigate();
@@ -59,6 +60,16 @@ export default function Card() {
       </>
     );
   };
+
+  const handleCertificationClick = () => {
+    navigate('/certifications');
+    return (
+      <>
+        <Certifications />
+      </>
+    );
+  };
+
 
   return (
     <div>
@@ -119,7 +130,7 @@ export default function Card() {
               </div>
               <div className='certifications grid'>
                 <img src={certificate} alt='' />
-                <button className='button button-pink'>certification</button>
+                <button className='button button-pink' onClick={handleCertificationClick}>certification</button>
               </div>
             </div>
           </div>
