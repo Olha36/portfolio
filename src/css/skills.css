@@ -2,16 +2,6 @@
   margin-top: 1rem;
 }
 
-.skills-title {
-  /* display: flex; */
-  justify-content: space-between;
-  /* align-items: center;
-  background-color: #c5ceda; */
-  /* padding: 2rem; */
-  border-radius: 1rem;
-  margin-bottom: 2rem;
-}
-
 .tech-skills ul,
 .soft-skills ul {
   list-style-type: none;

@@ -22,14 +22,15 @@ h3 {
   margin-bottom: 1rem;
   color: #8a4269;
 }
+
 .card-container {
   background-color: #e0acac;
-  border-radius: 1.25rem;
+  border-radius: 1.5rem;
   color: #160318;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
-
 .title-container {
   display: flex;
   justify-content: space-evenly;
@@ -39,6 +40,11 @@ h3 {
 }
 .title-container img {
   cursor: pointer;
+}
+.layout {
+  justify-content: space-between;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
 }
 .bold {
   font-weight: bold;

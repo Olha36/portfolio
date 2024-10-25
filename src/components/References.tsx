@@ -18,16 +18,16 @@ export default function References() {
   };
   return (
     <div className='card-container'>
-      <div className='references-title title-container'>
+      <div className='references-title title-container layout'>
         <h1>References</h1>
         <img src={home} alt='home icon' onClick={handleReturnClick} />
       </div>
 
-      <div className='certification-grid'>
-        <div className='certification-card'>
+      <div className='references-grid'>
+        <div className='references-card'>
           <img src={ctkLogistics} alt='ctk logistics' />
         </div>
-        <div className='certification-card'>
+        <div className='references-card'>
           <img src={highFive} alt='high five' />
         </div>
       </div>

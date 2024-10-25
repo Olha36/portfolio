@@ -1,3 +1,30 @@
-.references-title {
-    justify-content: space-between;
+.references-container {
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.references-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjusted for smaller screens */
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.references-card {
+  background-color: #f5e0e0;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.references-card img {
+  max-width: 100%;
+  height: 42.5rem;
+  border-radius: 0.5rem;
+}
+
+.references-card:hover {
+  transform: scale(1.05); /* Reduced scaling effect for better UX on mobile */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }

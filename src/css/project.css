@@ -1,15 +1,7 @@
 h2 {
   font-size: 1.5rem;
 }
-.project-title {
-  /* display: flex; */
-  justify-content: space-between;
-  /* align-items: center; */
-  /* background-color: #c5ceda; */
-  /* padding: 2rem; */
-  border-radius: 1rem;
-  margin-bottom: 2rem;
-}
+
 
 .projects-grid {
   display: grid;
