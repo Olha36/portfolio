@@ -30,6 +30,15 @@ export default function Card() {
     );
   };
 
+  const handleProjectsClick = () => {
+    navigate('/projects');
+    return (
+      <>
+        <Language />
+      </>
+    );
+  };
+
   return (
     <div>
       <div className='card-container'>
@@ -85,7 +94,7 @@ export default function Card() {
             <div className='info-right'>
               <div className='soft-skills grid'>
                 <img src={softSkills} alt='' />
-                <button className='button button-pink'>projects</button>
+                <button className='button button-pink' onClick={handleProjectsClick}>projects</button>
               </div>
               <div className='certifications grid'>
                 <img src={certificate} alt='' />
