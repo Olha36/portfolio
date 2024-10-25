@@ -11,6 +11,7 @@ import Experience from './Experience';
 import Language from './Language';
 import Education from './Education';
 import Projects from '../pages/Projects';
+import Skills from './Skills';
 
 export default function Card() {
   const navigate = useNavigate();
@@ -46,6 +47,15 @@ export default function Card() {
     return (
       <>
         <Education />
+      </>
+    );
+  };
+
+  const handleSkillsClick = () => {
+    navigate('/skills');
+    return (
+      <>
+        <Skills />
       </>
     );
   };
@@ -99,7 +109,7 @@ export default function Card() {
               </div>
               <div className='tech-skills grid'>
                 <img src={techSkills} alt='' />
-                <button className='button button-white'>tech/soft skills</button>
+                <button className='button button-white' onClick={handleSkillsClick}>tech/soft skills</button>
               </div>
             </div>
             <div className='info-right'>
