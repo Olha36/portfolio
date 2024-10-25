@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import '../css/card.css';
 import img1 from '../img/1_optimized.png';
 import certificate from '../img/avatar-icons/certificate.png';
@@ -6,11 +7,19 @@ import experience from '../img/avatar-icons/experience.png';
 import languages from '../img/avatar-icons/language.png';
 import softSkills from '../img/avatar-icons/soft-skills.png';
 import techSkills from '../img/avatar-icons/tech-skills.png';
+import Experience from './Experience';
 
 export default function Card() {
-  const handleExperienceClick = (): void => {
-    console.log('experience');
+  const navigate = useNavigate();
+  const handleExperienceClick = () => {
+    navigate('/experience');
+    return (
+      <>
+        <Experience />
+      </>
+    );
   };
+
   return (
     <div>
       <div className='card-container'>

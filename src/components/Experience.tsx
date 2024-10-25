@@ -1,14 +1,25 @@
+import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import '../css/experience.css';
 import home from '../img/3d-house.png';
+import Home from '../pages/Home';
 
 export default function Experience() {
+  const navigate = useNavigate();
+  const handleReturnClick = () => {
+    navigate('/home');
+    return (
+      <>
+        <Home />
+      </>
+    );
+  };
   return (
     <div>
       <div className='card-container'>
         <div className='experience-title'>
           <h1>WORK EXPERIENCE</h1>
-          <img src={home} alt='home icon' />
+          <img src={home} alt='home icon' onClick={handleReturnClick} />
         </div>
 
         <div className='info-container'>
