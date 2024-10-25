@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import '../css/card.css';
 import img1 from '../img/1_optimized.png';
 import certificate from '../img/avatar-icons/certificate.png';
@@ -6,16 +7,85 @@ import experience from '../img/avatar-icons/experience.png';
 import languages from '../img/avatar-icons/language.png';
 import softSkills from '../img/avatar-icons/soft-skills.png';
 import techSkills from '../img/avatar-icons/tech-skills.png';
+import Experience from './Experience';
+import Language from './Language';
+import Education from './Education';
+import Projects from '../pages/Projects';
+import Skills from './Skills';
+import Certifications from '../pages/Ceritications';
+import References from './References';
 
 export default function Card() {
-  const handleExperienceClick = (): void => {
-    console.log('experience');
+  const navigate = useNavigate();
+  const handleExperienceClick = () => {
+    navigate('/experience');
+    return (
+      <>
+        <Experience />
+      </>
+    );
   };
+
+  const handleLanguageClick = () => {
+    navigate('/languages');
+    return (
+      <>
+        <Language />
+      </>
+    );
+  };
+
+  const handleProjectsClick = () => {
+    navigate('/projects');
+    return (
+      <>
+        <Projects />
+      </>
+    );
+  };
+
+  const handleEducationClick = () => {
+    navigate('/education');
+    return (
+      <>
+        <Education />
+      </>
+    );
+  };
+
+  const handleSkillsClick = () => {
+    navigate('/skills');
+    return (
+      <>
+        <Skills />
+      </>
+    );
+  };
+
+  const handleCertificationClick = () => {
+    navigate('/certifications');
+    return (
+      <>
+        <Certifications />
+      </>
+    );
+  };
+
+  const handleReferencesClick = () => {
+    navigate('/references');
+    return (
+      <>
+        <References />
+      </>
+    );
+  };
+
+
   return (
     <div>
       <div className='card-container'>
         <div className='card-header'></div>
-        <div className='card-title'>
+        <div className='card-title title-container'>
           <div className='about-left'>
             <h3>Frontend developer</h3>
             <p className='description'>
@@ -24,7 +94,7 @@ export default function Card() {
               communication and a global perspective to every project. With a sharp eye for design and solid technical
               skills, I thrive in collaborative environments and am eager to drive innovation in impactful projects.
             </p>
-            <button className='button button-pink'>References</button>
+            <button className='button button-pink' onClick={handleReferencesClick}>References</button>
           </div>
           <div className='about-right'>
             <h3>OLHA KUCHERUK</h3>
@@ -50,27 +120,27 @@ export default function Card() {
               </div>
               <div className='education grid'>
                 <img src={education} alt='' />
-                <button className='button button-pink'>education</button>
+                <button className='button button-pink' onClick={handleEducationClick}>education</button>
               </div>
             </div>
             <div className='info-center'>
               <div className='languages grid'>
                 <img src={languages} alt='' />
-                <button className='button button-white'>languages</button>
+                <button className='button button-white' onClick={handleLanguageClick}>languages</button>
               </div>
               <div className='tech-skills grid'>
                 <img src={techSkills} alt='' />
-                <button className='button button-white'>tech/soft skills</button>
+                <button className='button button-white' onClick={handleSkillsClick}>tech/soft skills</button>
               </div>
             </div>
             <div className='info-right'>
               <div className='soft-skills grid'>
                 <img src={softSkills} alt='' />
-                <button className='button button-pink'>projects</button>
+                <button className='button button-pink' onClick={handleProjectsClick}>projects</button>
               </div>
               <div className='certifications grid'>
                 <img src={certificate} alt='' />
-                <button className='button button-pink'>certification</button>
+                <button className='button button-pink' onClick={handleCertificationClick}>certification</button>
               </div>
             </div>
           </div>

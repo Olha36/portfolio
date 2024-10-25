@@ -7,6 +7,7 @@ import Education from './components/Education';
 import Skills from './components/Skills';
 import Projects from './pages/Projects';
 import Certification from './components/Certification';
+import References from './components/References';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path='/skills' element={<Skills />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/certifications' element={<Certification />} />
+            <Route path='/references' element={<References />} />
           </Routes>
         </BrowserRouter>
       </div>

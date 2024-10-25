@@ -10,6 +10,9 @@
     border-radius: 1rem;
     margin-bottom: 2rem;
 }
+.education-title img {
+    cursor: pointer;
+}
 .flex {
     display: flex;
     justify-content: space-between;

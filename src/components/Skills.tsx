@@ -1,13 +1,24 @@
+import { useNavigate } from 'react-router-dom';
 import '../css/skills.css';
 import home from '../img/3d-house.png';
+import Home from '../pages/Home';
 
 export default function Skills() {
+  const navigate = useNavigate();
+  const handleReturnClick = () => {
+    navigate('/home');
+    return (
+      <>
+        <Home />
+      </>
+    );
+  };
   return (
     <div>
       <div className='card-container'>
-        <div className='skills-title'>
+        <div className='skills-title title-container'>
           <h1>SKILLS</h1>
-          <img src={home} alt='home icon' />
+          <img src={home} alt='home icon' onClick={handleReturnClick} />
         </div>
 
         <div className='info-container'>
