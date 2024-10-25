@@ -13,6 +13,7 @@ import Education from './Education';
 import Projects from '../pages/Projects';
 import Skills from './Skills';
 import Certifications from '../pages/Ceritications';
+import References from './References';
 
 export default function Card() {
   const navigate = useNavigate();
@@ -70,6 +71,15 @@ export default function Card() {
     );
   };
 
+  const handleReferencesClick = () => {
+    navigate('/references');
+    return (
+      <>
+        <References />
+      </>
+    );
+  };
+
 
   return (
     <div>
@@ -84,7 +94,7 @@ export default function Card() {
               communication and a global perspective to every project. With a sharp eye for design and solid technical
               skills, I thrive in collaborative environments and am eager to drive innovation in impactful projects.
             </p>
-            <button className='button button-pink'>References</button>
+            <button className='button button-pink' onClick={handleReferencesClick}>References</button>
           </div>
           <div className='about-right'>
             <h3>OLHA KUCHERUK</h3>
