@@ -8,6 +8,7 @@ import languages from '../img/avatar-icons/language.png';
 import softSkills from '../img/avatar-icons/soft-skills.png';
 import techSkills from '../img/avatar-icons/tech-skills.png';
 import Experience from './Experience';
+import Language from './Language';
 
 export default function Card() {
   const navigate = useNavigate();
@@ -16,6 +17,15 @@ export default function Card() {
     return (
       <>
         <Experience />
+      </>
+    );
+  };
+
+  const handleLanguageClick = () => {
+    navigate('/languages');
+    return (
+      <>
+        <Language />
       </>
     );
   };
@@ -65,7 +75,7 @@ export default function Card() {
             <div className='info-center'>
               <div className='languages grid'>
                 <img src={languages} alt='' />
-                <button className='button button-white'>languages</button>
+                <button className='button button-white' onClick={handleLanguageClick}>languages</button>
               </div>
               <div className='tech-skills grid'>
                 <img src={techSkills} alt='' />

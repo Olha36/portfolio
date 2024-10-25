@@ -1,12 +1,24 @@
-// import home from '../img/3d-house.png';
+import { useNavigate } from 'react-router-dom';
 import '../css/languages.css';
+import home from '../img/3d-house.png';
 import '../App.css';
+import Home from '../pages/Home';
 
 export default function Language() {
+  const navigate = useNavigate();
+  const handleReturnClick = () => {
+    navigate('/home');
+    return (
+      <>
+        <Home />
+      </>
+    );
+  };
   return (
     <div className='card-container'>
       <div className='language-title'>
         <h1>Languages</h1>
+        <img src={home} alt='home icon' onClick={handleReturnClick} />
       </div>
 
       <div className='language-info-container'>
