@@ -44,6 +44,9 @@ h3 {
   background-color: #c5ceda;
   padding: 2rem;
 }
+.title-container img {
+  cursor: pointer;
+}
 .bold {
   font-weight: bold;
 }
