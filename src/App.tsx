@@ -5,6 +5,7 @@ import ExperienceC from './pages/Experience';
 import Language from './components/Language';
 import Education from './components/Education';
 import Skills from './components/Skills';
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path='/languages' element={<Language />} />
             <Route path='/education' element={<Education />} />
             <Route path='/skills' element={<Skills />} />
+            <Route path='/projects' element={<Projects />} />
           </Routes>
         </BrowserRouter>
       </div>
