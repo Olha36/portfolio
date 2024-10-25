@@ -1,10 +1,15 @@
-.card-title h2 {
+h1 {
+  font-size: 2.5rem;
+  color: #70304a;
+  margin-bottom: 1.5rem;
+}
+h2 {
   font-size: 1.875rem;
   margin-bottom: 1rem;
   color: #70304a;
 }
 
-.card-title h3 {
+h3 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
   color: #8a4269;
@@ -18,7 +23,7 @@
 .card-about p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #333; /* More readable */
+  color: #333;
 }
 .description {
   width: 338px;
@@ -26,10 +31,9 @@
 
 .pics img {
   width: 250px;
-  /* width: 150px; */
   border-radius: 20%;
   border: 2px solid #e0acac;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds emphasis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .pics img:hover {
   transform: scale(1.5);
@@ -82,13 +86,13 @@
 .grid {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers both image and button horizontally */
-  justify-content: center; /* Centers them vertically */
-  gap: 10px; /* Adds space between the image and button */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .info-container img {
-  width: 50px; /* Adjust based on the icon size you prefer */
+  width: 50px;
   height: auto;
   margin: 0.3125rem;
 }
@@ -107,40 +111,39 @@
   width: 182px;
   height: 41px;
   padding: 10px 20px;
-  border-radius: 50px; /* Fully rounded edges */
+  border-radius: 50px;
   border: none;
-  font-family: 'Arial', sans-serif; /* Font similar to the picture */
+  font-family: 'Arial', sans-serif;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 .button-pink {
-  background-color: #fcb0b0; /* Light pink */
+  background-color: #fcb0b0;
   color: #fff;
   box-shadow: -4px 6px 11px -2px black;
 }
 
 .button-white {
-  background-color: #f2f2f2; /* Off-white */
-  color: #d76c6c; /* Light pink for text */
+  background-color: #f2f2f2;
+  color: #d76c6c;
   box-shadow: -4px 6px 11px -2px black;
 }
 
 .button:hover {
-  transform: translateY(-2px); /* Slight hover effect */
+  transform: translateY(-2px);
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .button:active {
-  transform: translateY(0); /* Removes hover effect when clicked */
+  transform: translateY(0);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Make the layout responsive */
 @media (max-width: 1024px) {
   .card-about {
     flex-direction: column;
@@ -225,7 +228,6 @@
 }
 
 .info-container {
-  /* display: flex; */
   justify-content: space-evenly;
   padding: 1.5rem;
 }
