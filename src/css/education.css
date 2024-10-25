@@ -2,11 +2,11 @@
   margin-top: 1rem;
 }
 .education-title {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
-  align-items: center;
-  background-color: #c5ceda;
-  padding: 2rem;
+  /* align-items: center; */
+  /* background-color: #c5ceda; */
+  /* padding: 2rem; */
   border-radius: 1rem;
   margin-bottom: 2rem;
 }
