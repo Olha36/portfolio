@@ -1,5 +1,6 @@
 .certification-container {
   margin: 2rem 0;
+  padding: 0 1rem;
 }
 
 .certification-title h1 {
@@ -7,6 +8,7 @@
   color: #70304a;
   margin-bottom: 1.5rem;
 }
+
 .certification-title {
   display: flex;
   justify-content: space-between;
@@ -19,10 +21,13 @@
 
 .certification-title img {
   cursor: pointer;
+  width: 3rem; /* Adjust the home icon size */
+  height: auto;
 }
+
 .certification-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjusted for smaller screens */
   gap: 1.5rem;
   padding: 1rem;
 }
@@ -42,6 +47,32 @@
 }
 
 .certification-card:hover {
-  transform: scale(1.15);
+  transform: scale(1.05); /* Reduced scaling effect for better UX on mobile */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for better responsiveness */
+@media (max-width: 768px) {
+  .certification-title {
+    flex-direction: column; /* Stack the title and home icon on smaller screens */
+    text-align: center;
+  }
+
+  .certification-title img {
+    margin-top: 1rem;
+  }
+
+  .certification-title h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .certification-title h1 {
+    font-size: 1.75rem; /* Even smaller for very small devices */
+  }
+
+  .certification-title img {
+    width: 2.5rem; /* Smaller icon for mobile */
+  }
 }
