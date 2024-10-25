@@ -31,6 +31,10 @@
   border: 2px solid #e0acac;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds emphasis */
 }
+.pics img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 .about-right {
   align-items: center;
@@ -164,9 +168,26 @@
   .card-about p {
     font-size: 0.75rem;
   }
+  .card-title {
+    flex-direction: column;
+  }
+  .about-right {
+    order: 1;
+  }
+  .about-left {
+    order: 2;
+  }
 
   .welcome p {
     font-size: 1.5rem;
+  }
+  .info-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-container .info div {
+    margin: 0.5rem 0;
   }
 }
 
@@ -211,15 +232,4 @@
 
 .info-container .info div {
   margin: 0.5rem;
-}
-
-@media (max-width: 768px) {
-  .info-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .info-container .info div {
-    margin: 0.5rem 0;
-  }
 }
