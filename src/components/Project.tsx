@@ -69,6 +69,18 @@ export default function Language() {
           </a>
         </div>
       </div>
+
+      <div className='project-card'>
+        <h2>Diploma Work Verification</h2>
+        <div className='project-links'>
+          <a href='https://olha36.github.io/diploma-ui/' target='_blank' rel='noopener noreferrer'>
+            View Project
+          </a>
+          <a href='https://github.com/Olha36/diploma-ui.git' target='_blank' rel='noopener noreferrer'>
+            View Code
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   );
