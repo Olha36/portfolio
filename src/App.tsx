@@ -6,6 +6,7 @@ import Language from './components/Language';
 import Education from './components/Education';
 import Skills from './components/Skills';
 import Projects from './pages/Projects';
+import Certification from './components/Certification';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path='/education' element={<Education />} />
             <Route path='/skills' element={<Skills />} />
             <Route path='/projects' element={<Projects />} />
+            <Route path='/certifications' element={<Certification />} />
           </Routes>
         </BrowserRouter>
       </div>
