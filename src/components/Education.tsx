@@ -1,16 +1,26 @@
-import home from '../img/3d-house.png';
+import { Home } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
 import '../css/education.css';
+import home from '../img/3d-house.png';
 
 export default function Education() {
+  const navigate = useNavigate();
+  const handleReturnClick = () => {
+    navigate('/home');
+    return (
+      <>
+        <Home />
+      </>
+    );
+  };
   return (
     <div>
-    <div className='card-container'>
-      <div className='education-title'>
-        <h1>Education</h1>
-        <img src={home} alt='home icon' />
-      </div>
+      <div className='card-container'>
+        <div className='education-title'>
+          <h1>Education</h1>
+          <img src={home} alt='home icon' onClick={handleReturnClick} />
+        </div>
 
-      
         <div className='info-software-education'>
           <div className='flex'>
             <h3>Zhytomyr State Polytechnic University</h3>
@@ -35,8 +45,7 @@ export default function Education() {
           <h4>Bachelor of Philology</h4>
           <p>035. Philology. The Germanic languages and literature (including translation)</p>
         </div>
-
+      </div>
     </div>
-  </div>
   );
 }

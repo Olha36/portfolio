@@ -9,6 +9,8 @@ import softSkills from '../img/avatar-icons/soft-skills.png';
 import techSkills from '../img/avatar-icons/tech-skills.png';
 import Experience from './Experience';
 import Language from './Language';
+import Education from './Education';
+import Projects from '../pages/Projects';
 
 export default function Card() {
   const navigate = useNavigate();
@@ -34,7 +36,16 @@ export default function Card() {
     navigate('/projects');
     return (
       <>
-        <Language />
+        <Projects />
+      </>
+    );
+  };
+
+  const handleEducationClick = () => {
+    navigate('/education');
+    return (
+      <>
+        <Education />
       </>
     );
   };
@@ -78,7 +89,7 @@ export default function Card() {
               </div>
               <div className='education grid'>
                 <img src={education} alt='' />
-                <button className='button button-pink'>education</button>
+                <button className='button button-pink' onClick={handleEducationClick}>education</button>
               </div>
             </div>
             <div className='info-center'>
