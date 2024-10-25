@@ -8,6 +8,9 @@ import softSkills from '../img/avatar-icons/soft-skills.png';
 import techSkills from '../img/avatar-icons/tech-skills.png';
 
 export default function Card() {
+  const handleExperienceClick = (): void => {
+    console.log('experience');
+  };
   return (
     <div>
       <div className='card-container'>
@@ -23,9 +26,6 @@ export default function Card() {
             </p>
             <button className='button button-pink'>References</button>
           </div>
-          {/* <div className='pics'>
-            <img src={img1} alt='' />
-          </div> */}
           <div className='about-right'>
             <h3>OLHA KUCHERUK</h3>
             <div className='pics'>
@@ -44,7 +44,9 @@ export default function Card() {
             <div className='info-left'>
               <div className='experience grid'>
                 <img src={experience} alt='' />
-                <button className='button button-pink'>experience</button>
+                <button className='button button-pink' onClick={handleExperienceClick}>
+                  experience
+                </button>
               </div>
               <div className='education grid'>
                 <img src={education} alt='' />
