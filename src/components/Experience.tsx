@@ -17,7 +17,7 @@ export default function Experience() {
   return (
     <div>
       <div className='card-container'>
-        <div className='experience-title'>
+        <div className='experience-title title-container'>
           <h1>WORK EXPERIENCE</h1>
           <img src={home} alt='home icon' onClick={handleReturnClick} />
         </div>

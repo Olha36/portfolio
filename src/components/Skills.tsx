@@ -16,7 +16,7 @@ export default function Skills() {
   return (
     <div>
       <div className='card-container'>
-        <div className='skills-title'>
+        <div className='skills-title title-container'>
           <h1>SKILLS</h1>
           <img src={home} alt='home icon' onClick={handleReturnClick} />
         </div>

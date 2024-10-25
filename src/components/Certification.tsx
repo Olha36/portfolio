@@ -27,7 +27,7 @@ export default function Certification() {
   };
   return (
     <div className='certification-container'>
-      <div className='certification-title'>
+      <div className='certification-title title-container'>
         <h1>Certifications</h1>
         <img src={home} alt='home icon' onClick={handleReturnClick} />
       </div>

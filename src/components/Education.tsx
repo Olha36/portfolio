@@ -16,7 +16,7 @@ export default function Education() {
   return (
     <div>
       <div className='card-container'>
-        <div className='education-title'>
+        <div className='education-title title-container'>
           <h1>Education</h1>
           <img src={home} alt='home icon' onClick={handleReturnClick} />
         </div>

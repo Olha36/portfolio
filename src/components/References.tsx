@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
-import '../css/languages.css';
+import '../css/references.css';
 import home from '../img/3d-house.png';
 import ctkLogistics from '../img/references/ctk.jpg';
 import highFive from '../img/references/high-five.jpg';
@@ -18,7 +18,7 @@ export default function References() {
   };
   return (
     <div className='card-container'>
-      <div className='language-title'>
+      <div className='references-title title-container'>
         <h1>References</h1>
         <img src={home} alt='home icon' onClick={handleReturnClick} />
       </div>

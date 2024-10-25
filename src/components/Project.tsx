@@ -16,7 +16,7 @@ export default function Language() {
   };
   return (
     <div className='card-container'>
-    <div className='language-title'>
+    <div className='project-title title-container'>
       <h1>Projects</h1>
       <img src={home} alt='home icon' onClick={handleReturnClick} />
     </div>

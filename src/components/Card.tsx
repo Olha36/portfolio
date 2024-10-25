@@ -85,7 +85,7 @@ export default function Card() {
     <div>
       <div className='card-container'>
         <div className='card-header'></div>
-        <div className='card-title'>
+        <div className='card-title title-container'>
           <div className='about-left'>
             <h3>Frontend developer</h3>
             <p className='description'>
