@@ -30,28 +30,28 @@ export default function Experience() {
               <p>March 2024 - present</p>
             </div>
             <p>
-              As a Planning Assistant, I played a pivotal role in streamlining logistics operations by effectively
-              managing and optimizing order processing. My responsibilities included:
+              As a Planning Assistant, I play a pivotal role in streamlining logistics operations by effectively
+              managing and optimizing order processing. My responsibilities include:
             </p>
             <ul>
               <li>
-                <span className='bold'>Order Management:</span> Efficiently received and inputted orders from planners
-                into the logistics management system, ensuring data accuracy and timely processing.
+                <span className='bold'>Order Management:</span> Efficiently receive and input orders from planners into
+                the logistics management system, ensuring data accuracy and timely processing.
               </li>
               <li>
-                <span className='bold'>Transport Coordination: </span> Oversaw the management of transport orders from
+                <span className='bold'>Transport Coordination: </span> Oversee the management of transport orders from
                 various platforms, facilitating seamless communication and collaboration between stakeholders.
               </li>
               <li>
-                <span className='bold'>Scheduling: </span> Scheduled and optimized loading and unloading slots to
-                enhance operational efficiency and reduce turnaround times.
+                <span className='bold'>Scheduling: </span> Schedule and optimize loading and unloading slots to enhance
+                operational efficiency and reduce turnaround times.
               </li>
               <li>
                 <span className='bold'>Client Communication: </span> Actively engaged with clients to address inquiries
                 and resolve issues, ensuring a high level of service and satisfaction.
               </li>
               <li>
-                <span className='bold'>Order Verification: </span> Conducted thorough verification of orders in the
+                <span className='bold'>Order Verification: </span> Conduct thorough verification of orders in the
                 system, ensuring compliance with operational standards and minimizing discrepancies.
               </li>
             </ul>
@@ -84,46 +84,55 @@ export default function Experience() {
               </li>
               <li>
                 <span className='bold'> Resource Management:</span> Meticulously save and organize all lesson materials
-                within the goIteens lessons repository, providing participants with easy access for review and further
-                study
+                within the{' '}
+                <a href='https://github.com/Olha36/goiteens-lessons.git' target='_blank'>
+                  goIteens lessons repository
+                </a>
+                , providing participants with easy access for review and further study
               </li>
             </ul>
           </div>
           <div className='experience-freelance'>
             <h2>Freelance</h2>
             <div className='flex'>
-              <h3>self-employed | remote</h3>
+              <h3>Self-employed | remote</h3>
               <p>2022 - present</p>
             </div>
             <p>
-              As a Freelance Software Engineer, I focused on creating high-quality, user-centric web applications using
+              As a Freelance Software Engineer, I focus on creating high-quality, user-centric web applications using
               React and JavaScript. My key contributions include:
             </p>
             <ul>
               <li>
-                <span className='bold'>React Development: </span> Designed and developed dynamic landing pages and
+                <span className='bold'>React Development: </span> Design and develop dynamic landing pages and
                 small-scale JavaScript projects, including interactive games and business web card websites, ensuring
                 responsiveness and optimal performance.
               </li>
               <li>
-                <span className='bold'>Client-Centric Solutions: </span>Collaborated closely with diverse clients to
+                <span className='bold'>Client-Centric Solutions: </span>Collaborate closely with diverse clients to
                 gather requirements and deliver tailored solutions that meet their specific needs, enhancing user
                 experience and satisfaction.
               </li>
               <li>
-                <span className='bold'> Innovative Project Management: </span> Led the development of a collaborative
-                program aimed at improving the quality of Bachelor's and Master's theses at universities by streamlining
-                the thesis-checking process.
+                <span className='bold'> Innovative Project Management: </span> Lead the development of a{' '}
+                <a href='https://olha36.github.io/diploma-ui/' target='_blank'>
+                  collaborative program
+                </a>{' '}
+                aimed at improving the quality of Bachelor's and Master's theses at universities by streamlining the
+                thesis-checking process.
               </li>
             </ul>
           </div>
           <div className='experience-tutor'>
             <h2>English tutor</h2>
             <div className='flex'>
-              <h3>Entrepreneur | remote</h3>
+              <h3>Tutor | remote</h3>
               <p>2016 - present</p>
             </div>
-            <p></p>
+            <p>
+              As an experienced English Tutor, I focus on providing personalized learning experiences for students
+              ensuring language growth across proficiency levels. My key contributions include:
+            </p>
             <ul>
               <li>
                 <span className='bold'>Tailored Methodologies: </span> Implement a variety of teaching methods and
