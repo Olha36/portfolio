@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <div>
-        <BrowserRouter basename="/home">
+        <BrowserRouter>
           <Routes>
             <Route index element={<Home />} />
             <Route path='/home' element={<Home />} />
