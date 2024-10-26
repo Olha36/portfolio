@@ -1,7 +1,3 @@
-.card-container:hover {
-  transform: scale(1.02);
-}
-
 .language-info-container {
   display: flex;
   justify-content: space-between;
