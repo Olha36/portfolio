@@ -22,7 +22,7 @@ export default function Experience() {
           <img src={home} alt='home icon' onClick={handleReturnClick} />
         </div>
 
-        <div className='info-container'>
+        <div className='experience-container'>
           <div className='experience-logistics'>
             <h2>Planner assistant</h2>
             <div className='flex'>

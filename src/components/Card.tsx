@@ -14,6 +14,7 @@ import Projects from '../pages/Projects';
 import Skills from './Skills';
 import Certifications from '../pages/Ceritications';
 import References from './References';
+import Header from './Header';
 
 export default function Card() {
   const navigate = useNavigate();
@@ -83,8 +84,9 @@ export default function Card() {
 
   return (
     <div>
-      <div className='card-container'>
-        <div className='card-header'></div>
+      <div >
+        {/* <div className='card-header'></div> */}
+        <Header />
         <div className='card-title title-container'>
           <div className='about-left'>
             <h3>Frontend developer</h3>
