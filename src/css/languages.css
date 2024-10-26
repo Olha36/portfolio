@@ -1,0 +1,15 @@
+.language-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5e0e0;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.25rem;
+}

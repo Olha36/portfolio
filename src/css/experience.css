@@ -1,0 +1,84 @@
+.experience-container {
+  background-color: #f5e0e0;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.experience-logistics,
+.experience-coach,
+.experience-freelance,
+.experience-tutor {
+  margin-bottom: 2rem;
+}
+
+.experience-logistics h2,
+.experience-coach h2,
+.experience-freelance h2,
+.experience-tutor h2 {
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 2rem 0;
+  border-top: 1px solid #70304a;
+  border-bottom: 1px solid #70304a;
+  padding: 0.5rem 0;
+}
+
+ul {
+  padding-left: 1.5rem;
+  list-style-position: inside;
+  margin: 0;
+}
+
+ul li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #160318;
+  line-height: 1.5;
+  text-align: start;
+}
+
+ul li::marker {
+  color: #70304a;
+  font-size: 1.25rem;
+}
+
+.bold {
+  color: #70304a;
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-title h1 {
+    font-size: 2rem;
+  }
+
+  .experience-logistics h2,
+  .experience-coach h2,
+  .experience-freelance h2,
+  .experience-tutor h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 605px) {
+  .experience-title {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 300px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
