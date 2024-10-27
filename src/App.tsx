@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import ExperienceC from './pages/Experience';
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <div>
-        <BrowserRouter>
+      <HashRouter>
           <Routes>
             <Route index element={<Home />} />
             <Route path='/home' element={<Home />} />
@@ -25,7 +25,7 @@ function App() {
             <Route path='/certifications' element={<Certification />} />
             <Route path='/references' element={<References />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </>
   );
