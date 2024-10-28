@@ -13,6 +13,7 @@ import postman from '../img/certificates/postman and api testing for beginners.j
 import programmingWithJs from '../img/certificates/Programming with Javascript.jpg';
 import responsiveWebDesign from '../img/certificates/responsive web design.jpg';
 import typescript from '../img/certificates/typescript for professionals.jpg';
+import reactFrontBack from '../img/certificates/react-front-to-back.jpg';
 import Home from '../pages/Home';
 
 export default function Certification() {
@@ -33,6 +34,11 @@ export default function Certification() {
       </div>
 
       <div className='certification-grid'>
+
+      <div className='certification-card'>
+          <img src={reactFrontBack} alt='react from front to back' />
+        </div>
+
         <div className='certification-card'>
           <img src={jsZeroToHero} alt='JS course from zero to hero' />
         </div>
