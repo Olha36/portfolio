@@ -175,6 +175,9 @@
   .info-container .info div {
     margin: 0.5rem 0;
   }
+  .flex button:first-of-type {
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
