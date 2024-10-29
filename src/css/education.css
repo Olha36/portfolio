@@ -14,3 +14,8 @@
   margin-bottom: 1rem;
   transition: background-color 0.3s ease;
 }
+@media (max-width: 768px) {
+  .flex {
+    align-items: center;
+  }
+}
