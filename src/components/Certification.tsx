@@ -11,9 +11,10 @@ import jsAlgorithms from '../img/certificates/Javascript algorithms and data str
 import jsZeroToHero from '../img/certificates/JS course from zero to hero.jpg';
 import postman from '../img/certificates/postman and api testing for beginners.jpg';
 import programmingWithJs from '../img/certificates/Programming with Javascript.jpg';
-import responsiveWebDesign from '../img/certificates/responsive web design.jpg';
-import typescript from '../img/certificates/typescript for professionals.jpg';
 import reactFrontBack from '../img/certificates/react-front-to-back.jpg';
+import responsiveWebDesign from '../img/certificates/responsive web design.jpg';
+import softwareEngineering from '../img/certificates/software-engineering.jpeg';
+import typescript from '../img/certificates/typescript for professionals.jpg';
 import Home from '../pages/Home';
 
 export default function Certification() {
@@ -34,8 +35,11 @@ export default function Certification() {
       </div>
 
       <div className='certification-grid'>
+        <div className='certification-card'>
+          <img src={softwareEngineering} alt='software engineering' />
+        </div>
 
-      <div className='certification-card'>
+        <div className='certification-card'>
           <img src={reactFrontBack} alt='react from front to back' />
         </div>
 
