@@ -28,16 +28,17 @@ export default function Skills() {
               <li>HTML</li>
               <li>CSS/SASS/SCSS</li>
               <li>JS/TS</li>
-              <li>npm</li>
-              <li>Git/GitHub</li>
-              <li>VS Code</li>
               <li>React.js</li>
               <li>Node.js</li>
+              <li>REST API</li>
+              <li>Git/GitHub</li>
+              <li>npm</li>
+              <li>VS Code</li>
               <li>MUI</li>
-              <li>Jira</li>
-              <li>Postman</li>
-              <li>Canva</li>
               <li>Figma</li>
+              <li>Canva</li>
+              <li>Postman</li>
+              <li>Jira</li>
               <li>Docker</li>
               <li>Azure</li>
               <li>Python</li>
