@@ -81,6 +81,20 @@ export default function Language() {
           </a>
         </div>
       </div>
+
+      <div className='project-card'>
+        <h2>Planets 3D</h2>
+        <p>(only for big screens)</p>
+        <div className='project-links'>
+          <a href='https://olha36.github.io/3D-planets/' target='_blank' rel='noopener noreferrer'>
+            View Project 
+          </a>
+          <a href='https://github.com/Olha36/3D-planets.git' target='_blank' rel='noopener noreferrer'>
+            View Code
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
   );

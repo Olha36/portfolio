@@ -2,7 +2,6 @@ h2 {
   font-size: 1.5rem;
 }
 
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -11,17 +10,27 @@ h2 {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #f5e0e0;
   border-radius: 1.25rem;
   padding: 3rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  min-height: 60px;
 }
 
 .project-links {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+}
+.project-card p {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  color: #555;
 }
 
 .project-links a {
