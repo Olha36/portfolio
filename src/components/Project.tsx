@@ -95,6 +95,18 @@ export default function Language() {
         </div>
       </div>
 
+      <div className='project-card'>
+        <h2>Harry Potter</h2>
+        <div className='project-links'>
+          <a href='https://olha36.github.io/harry-potter/' target='_blank' rel='noopener noreferrer'>
+            View Project 
+          </a>
+          <a href='https://github.com/Olha36/harry-potter.git' target='_blank' rel='noopener noreferrer'>
+            View Code
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
   );

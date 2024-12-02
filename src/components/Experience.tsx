@@ -23,40 +23,6 @@ export default function Experience() {
         </div>
 
         <div className='experience-container'>
-          <div className='experience-logistics'>
-            <h2>Planner assistant</h2>
-            <div className='flex'>
-              <h3>CTK Logistics | Konin, Poland</h3>
-              <p>March 2024 - present</p>
-            </div>
-            <p>
-              As a Planning Assistant, I play a pivotal role in streamlining logistics operations by effectively
-              managing and optimizing order processing. My responsibilities include:
-            </p>
-            <ul>
-              <li>
-                <span className='bold'>Order Management:</span> Efficiently receive and input orders from planners into
-                the logistics management system, ensuring data accuracy and timely processing.
-              </li>
-              <li>
-                <span className='bold'>Transport Coordination: </span> Oversee the management of transport orders from
-                various platforms, facilitating seamless communication and collaboration between stakeholders.
-              </li>
-              <li>
-                <span className='bold'>Scheduling: </span> Schedule and optimize loading and unloading slots to enhance
-                operational efficiency and reduce turnaround times.
-              </li>
-              <li>
-                <span className='bold'>Client Communication: </span> Actively engaged with clients to address inquiries
-                and resolve issues, ensuring a high level of service and satisfaction.
-              </li>
-              <li>
-                <span className='bold'>Order Verification: </span> Conduct thorough verification of orders in the
-                system, ensuring compliance with operational standards and minimizing discrepancies.
-              </li>
-            </ul>
-          </div>
-
           <div className='experience-coach'>
             <h2>Frontend coach</h2>
             <div className='flex'>
