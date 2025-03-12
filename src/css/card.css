@@ -1,10 +1,11 @@
+h3, h4 {
+  animation: bounceInRigth 2s ease-in-out 0s 1 normal forwards;
+}
 .about-left {
   width: 40%;
   max-width: 25rem;
 }
-.about-left h3 {
-  width: 90%;
-}
+
 .card-about p {
   font-size: 1rem;
   line-height: 1.6;
@@ -12,6 +13,7 @@
 }
 .description {
   width: 338px;
+  animation: swingAnim 2s ease-in-out 0s 1 normal forwards;
 }
 
 .pics img {
@@ -19,9 +21,9 @@
   border-radius: 20%;
   border: 2px solid #e0acac;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: rollInRight 2s ease 0s 1 normal forwards;
 }
 .pics img:hover {
-  transform: scale(1.5);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -98,7 +100,7 @@
   padding: 10px 20px;
   border-radius: 50px;
   border: none;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -127,6 +129,41 @@
 .button:active {
   transform: translateY(0);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes rollInRight {
+  0% {
+    transform: translateX(100%) rotate(120deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceInRigth {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes swingAnim {
+  0% {
+    opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+  }
 }
 
 @media (max-width: 1024px) {

@@ -5,16 +5,18 @@
   padding: 1rem;
   text-align: center;
 }
-
+h1,
+h2,
+h4 {
+  color: #70304a;
+}
 h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  color: #70304a;
 }
 h2 {
   font-size: 1.875rem;
   margin-bottom: 1rem;
-  color: #70304a;
 }
 
 h3 {

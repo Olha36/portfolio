@@ -98,7 +98,7 @@ export default function Card() {
         <Header />
         <div className="card-title title-container">
           <div className="about-left">
-            <h3>Frontend developer</h3>
+            <h4>Frontend developer</h4>
             <p className="description">
               I am a Software Engineer with 1.5 years of experience mentoring
               teens in web development and a proven ability to build dynamic,
