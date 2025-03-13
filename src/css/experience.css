@@ -14,15 +14,18 @@
 .flex p {
   animation: letterSpacing 4s ease-in-out infinite;
 }
+
 .experience-coach,
 .experience-freelance,
 .experience-tutor {
   margin-bottom: 2rem;
 }
+
 .experience-coach p {
-  animation: colorChange 6s ease-in-out infinite;
+  animation: colorChange 1s forwards;
+  animation-delay: calc(0.1s * var(--i));
 }
-.experience-logistics h2,
+
 .experience-coach h2,
 .experience-freelance h2,
 .experience-tutor h2 {
@@ -78,13 +81,10 @@ ul li::marker {
     transform: translate3d(0, 0, 0);
   }
 }
-@keyframes letterSpacing {
-  0%, 100% { letter-spacing: 0px; }
-  50% { letter-spacing: 2px; }
-}
+
 @keyframes colorChange {
   0%, 100% { color: #333; }
-  50% { color: #0056b3; }
+  50% { color: #a8507f; }
 }
 
 @media (max-width: 768px) {
@@ -97,7 +97,6 @@ ul li::marker {
     font-size: 2rem;
   }
 
-  .experience-logistics h2,
   .experience-coach h2,
   .experience-freelance h2,
   .experience-tutor h2 {
