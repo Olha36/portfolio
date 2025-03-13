@@ -137,7 +137,7 @@ export default function Card() {
           <div className="info">
             <div className="info-left">
               <div className="experience grid">
-                <img src={experience} alt="" />
+                <img src={experience} className="box-shadow" alt="" />
                 <button
                   className="button button-pink"
                   onClick={handleExperienceClick}
@@ -166,7 +166,7 @@ export default function Card() {
                 </button>
               </div>
               <div className="tech-skills grid">
-                <img src={techSkills} alt="" />
+                <img src={techSkills} className="box-shadow" alt="" />
                 <button
                   className="button button-white"
                   onClick={handleSkillsClick}
@@ -177,7 +177,7 @@ export default function Card() {
             </div>
             <div className="info-right">
               <div className="soft-skills grid">
-                <img src={softSkills} alt="" />
+                <img src={softSkills} className="box-shadow" alt="" />
                 <button
                   className="button button-pink"
                   onClick={handleProjectsClick}
