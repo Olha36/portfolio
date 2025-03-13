@@ -21,7 +21,7 @@ export default function Experience() {
         key={index}
         style={{
           "--i": index,
-          animation: `colorChange 2s ease-in-out ${index * 0.1}s infinite`,  // Staggered animation
+          animation: `colorChange 2s ease-in-out ${index * 0.1}s infinite`, 
         } as React.CSSProperties}
       >
         {char}
@@ -76,21 +76,22 @@ export default function Experience() {
                   goIteens lessons repository
                 </a>
                 , providing participants with easy access for review and further
-                study
+                study.
               </li>
             </ul>
           </div>
+
           <div className="experience-freelance">
             <h2>Freelance</h2>
             <div className="flex">
               <h3>Self-employed | remote</h3>
               <p>2022 - present</p>
             </div>
-            <p>
-              As a Freelance Software Engineer, I focus on creating
-              high-quality, user-centric web applications using React and
-              JavaScript. My key contributions include:
-            </p>
+
+            {splitText(
+              "As a Freelance Software Engineer, I focus on creating high-quality, user-centric web applications using React and JavaScript. My key contributions include:"
+            )}
+
             <ul>
               <li>
                 <span className="bold">React Development: </span> Design and
@@ -115,17 +116,18 @@ export default function Experience() {
               </li>
             </ul>
           </div>
+
           <div className="experience-tutor">
             <h2>English tutor</h2>
             <div className="flex">
               <h3>Tutor | remote</h3>
               <p>2016 - present</p>
             </div>
-            <p>
-              As an experienced English Tutor, I focus on providing personalized
-              learning experiences for students ensuring language growth across
-              proficiency levels. My key contributions include:
-            </p>
+
+            {splitText(
+              "As an experienced English Tutor, I focus on providing personalized learning experiences for students ensuring language growth across proficiency levels. My key contributions include:"
+            )}
+
             <ul>
               <li>
                 <span className="bold">Tailored Methodologies: </span> Implement
